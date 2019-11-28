@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.francisco.control.Controller">
+    <children>
+        <TextArea fx:id="texto" layoutX="216.0" layoutY="97.0" nodeOrientation="LEFT_TO_RIGHT" onKeyReleased="#newContextMenu1" onMouseClicked="#newContextMenu2" prefHeight="248.0" prefWidth="373.0" promptText="Digite o assunto da nota aqui..." style="-fx-background-color: #e2f2f5; -fx-border-color: #b6eff9; -fx-border-radius: 0px;" />
+        <Button fx:id="adicionarButton" layoutX="499.0" layoutY="358.0" mnemonicParsing="false" onAction="#addNote" prefHeight="28.0" prefWidth="90.0" style="-fx-border-color: #b6eff9; -fx-border-radius: 0px; -fx-background-color: #e2f2f5;" text="Adicionar" />
+        <Label layoutX="381.0" layoutY="14.0" text="Titulo" textAlignment="CENTER" />
+        <Label layoutX="375.0" layoutY="72.0" text="Assunto" />
+        <TextField fx:id="Titulo" alignment="CENTER" layoutX="215.0" layoutY="36.0" prefHeight="26.0" prefWidth="373.0" promptText="Digite o título da nota aqui..." style="-fx-background-color: #e2f2f5; -fx-border-radius: 5px; -fx-border-color: #b6eff9;" />
+      <ListView fx:id="areaNota" fixedCellSize="0.0" prefHeight="400.0" prefWidth="200.0" style="-fx-padding: 20px; -fx-padding: 20px 10px;" />
+      <Button layoutX="215.0" layoutY="358.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="90.0" style="-fx-border-color: #b6eff9; -fx-border-radius: 0px; -fx-background-color: #e2f2f5;" text="Cancelar" />
+    </children>
+</Pane>
